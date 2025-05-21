@@ -90,6 +90,7 @@ Dropout layers are kept active during inference to simulate multiple forward pas
 
 #### ![Sentence-Level Average Token Uncertainty](visualization/output3.png)
 **Sentence-Level Average Token Uncertainty**
+
 The **Sentence-Level Average Token Uncertainty** plot presents an aggregated view of the model’s uncertainty across different sentences by averaging the token-level uncertainty values for each sentence. This visualization helps identify which sentences the model finds more ambiguous or challenging as a whole, rather than focusing on individual token predictions.In the plotted graph, the x-axis corresponds to the sentence indices, while the y-axis represents the average standard deviation (uncertainty) of the tokens in each sentence. From the observed trends, it is evident that some sentences exhibit consistently higher average uncertainty compared to others. This suggests that these sentences likely contain more informal, rare, or contextually ambiguous language—characteristics typical of the WNUT dataset, which deals with noisy user-generated content like tweets and social media posts.Such variation implies that the model’s confidence is influenced not only by token-level features but also by sentence-level semantics and structure. Sentences with lower average uncertainty may consist of more common or well-understood expressions, while those with higher values could include entities, misspellings, or novel phrases that the model struggles to generalize from its training data.
 
 
@@ -135,7 +136,34 @@ In real-world applications, NER systems often face **domain drift**—where the 
 
 ---
 
-## 👤 Author
+## 📄 License
 
-**Your Name**  
-[GitHub](https://github.com/yourusername) | [LinkedIn](https://linkedin.com/in/yourprofile)
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).  
+You are free to use, modify, and distribute this code for personal or commercial use, provided that you include proper attribution.
+
+```
+MIT License
+
+Copyright (c) 2025 [Your Name]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights 
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+copies of the Software, and to permit persons to whom the Software is 
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in 
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE.
+```
+
+
+
